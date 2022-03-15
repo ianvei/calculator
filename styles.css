@@ -12,6 +12,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     font-family: San -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
 .calculator-container {
@@ -23,7 +24,7 @@ body {
     align-items: center;
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: #FEFBF3;
+    /* background-color: #FEFBF3; */
 }
 
 .top {
@@ -36,14 +37,21 @@ body {
 
 .middle {
     display: grid;
-   height: inherit;
-   width: 90%; 
-   background-color: #79B4B7;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 80%;
+    width: 90%; 
+    grid-gap: 10px;
+    border: none;
+   /* background-color: #79B4B7; */
 }
 
 .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90%;
     height: 10%;
+    font-weight: bold;
 }
 
 .button {
@@ -52,13 +60,17 @@ body {
     align-items: center;
     border: none;
     outline: 0;
-    background-color: #79B4B7;
+    /* background-color: #79B4B7; */
 }
 
 .screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     height: 45%;
     width: 100%;
-    background-color: #79B4B7;
+    /* background-color: #79B4B7; */
 }
 
 h1 {
@@ -70,4 +82,36 @@ h1 {
     padding-bottom: 3%;
     padding-top: 4.5%;
     margin-bottom: 0px;
+}
+
+.number-storage {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border: none;
+    padding-top: 10px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.screen-number {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border: none;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+#equal {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
