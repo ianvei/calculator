@@ -79,8 +79,7 @@ body {
     height: 45%;
     width: 100%;
     background-color: #495a66;
-    border-radius: 0px;
-    color: #D3DEDC;
+    border-radius: 10px;
 }
 
 h1 {
@@ -93,6 +92,7 @@ h1 {
     padding-top: 4.5%;
     margin-bottom: 0px;
     font-weight: bolder;
+    font-size: 40px;
 }
 
 .number-storage {
@@ -103,6 +103,7 @@ h1 {
     padding-top: 10px;
     padding-right: 20px;
     font-weight: bold;
+    color: #d3dedcb0;
 }
 
 .screen-number {
@@ -112,8 +113,13 @@ h1 {
     border: none;
     padding-bottom: 10px;
     padding-right: 20px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
+    color: #D3DEDC;
+}
+
+.number-storage {
+    color: 
 }
 
 button:hover {
